@@ -1,0 +1,183 @@
+.background
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #282c34;
+    color: white;
+    height: 70vmin;
+}
+
+
+#ajouter
+{
+    color:white;
+    background-color: #1e2127;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 10%;
+}
+
+#ajouter:hover
+{
+    background-color: #3a4049;
+}
+
+
+#supprimer
+{
+    color:white;
+    background-color: #1e2127;
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+#supprimer:hover
+{
+    background-color: #3a4049;
+}
+
+#addTask
+{
+    display: flex;
+    flex-direction: row;
+    width: 60%;  
+    height: 7%;
+
+}
+
+#taskInput
+{
+    width: 70%;
+    color: white;
+    background-color: #1e2127;
+    border: 1px inset grey;
+}
+
+#taskInput:focus
+{
+    outline: none;    
+}
+
+
+.todo_list
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #1e2127;
+    min-height: auto;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+
+#dateFin
+{
+    width: 20%;
+    text-align: center;
+    color: white;
+    background-color: #1e2127;
+    border: 1px inset grey;
+}
+
+#dateFin:hover
+{
+    background-color: #3a4049;
+}
+
+#dateFin:focus
+{
+    outline: none;
+}
+
+
+
+ul 
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+ul li:hover
+{
+    background-color: #3a4049;
+}
+
+
+ul li.checked
+{
+    background-color: white;
+    text-decoration: line-through;
+}
+
+ul li
+{
+    cursor: pointer;
+    list-style: none;
+    border-bottom: 1px inset grey;
+    margin-right: 0;
+    padding-left: 0;
+    height: 50px;
+    width: 100%;
+}
+
+/*ul li.checked::before
+{
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+
+}*/
+
+
+.close
+{
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 4%;
+    margin-left: 5.8%;
+    background: #3a4049;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.close:hover
+{
+    background-color: #1e2127;
+    color: red;
+}
+
+
+#tache
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#date
+{
+    border-left: 1px solid rgb(73, 71, 71);
+    border-right: 1px solid rgb(73, 71, 71);
+    width: 20.4%;
+    text-align: center;
+}
+
+#intitule
+{
+    width: 69.7%;
+    border-left: 1px solid #3a4049;
+    padding-left: 10px;
+}
