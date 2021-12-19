@@ -16,6 +16,7 @@
     border: 1px solid grey;
     border-radius: 3px;
     width: 10%;
+    cursor: pointer;
 }
 
 #ajouter:hover
@@ -80,6 +81,7 @@
     color: white;
     background-color: #1e2127;
     border: 1px inset grey;
+    cursor: pointer;
 }
 
 #dateFin:hover
@@ -118,14 +120,14 @@ ul li
 {
     cursor: pointer;
     list-style: none;
-    border-bottom: 1px inset grey;
+    border-bottom: 1px dashed grey;
     margin-right: 0;
     padding-left: 0;
     height: 50px;
     width: 100%;
 }
 
-/*ul li.checked::before
+ul li.checked::before
 {
     content: '';
     position: absolute;
@@ -136,16 +138,28 @@ ul li
     height: 15px;
     width: 7px;
 
-}*/
+}
+
+ul li:nth-child(odd)
+{
+
+    background-color: #242b33;
+}
+
+ul li:nth-child(odd):hover
+{
+    background-color: #2c333d;
+}
 
 
 .close
 {
+    cursor: pointer;
+    color: white;
     position: relative;
     right: 0;
     top: 0;
-    width: 4%;
-    margin-left: 5.8%;
+    width: 10%;
     background: #3a4049;
     text-align: center;
     border: 1px solid grey;
@@ -153,8 +167,8 @@ ul li
 
 .close:hover
 {
-    background-color: #1e2127;
-    color: red;
+    background-color: #202433;
+    color: white;
 }
 
 
@@ -177,7 +191,33 @@ ul li
 
 #intitule
 {
-    width: 69.7%;
+    cursor: pointer;
+    width: 69%;
     border-left: 1px solid #3a4049;
     padding-left: 10px;
+}
+
+#forme
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border-bottom: 1px solid #000000;
+}
+
+#forme #titre
+{
+    background-color: #3a4049;
+    text-align: center;
+    border-right: 1px #000000 solid;
+    width: 69.6%;
+}
+
+#forme #fin
+{
+    background-color: #3a4049;
+    text-align: center;
+    border-left: 1px #000000 solid;
+    width: 30.4%;
 }

@@ -11,7 +11,15 @@ function Todo() {
               <button id='ajouter'> ajouter </button>
             </div>
 
+
+          <div id='forme'>
+            <label id='titre'>Intitulé</label>
+            <label id='fin'>Date de fin</label>
+          </div>
+
           <div className='todo_list'>
+
+          
 
             <ul id='list'>
 

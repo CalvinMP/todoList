@@ -14,8 +14,6 @@ ReactDOM.render(
 
 );
 
-//actu();
-
 
 let ajout = document.getElementById('ajouter');
 console.log(ajout);
@@ -50,31 +48,18 @@ ajout.addEventListener('click', function(e){
     document.getElementById("dateFin").value = ""; 
 
     var span = document.createElement("button");
+    span.onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
 
-    //actu();
   }
   
 });
 
-/*function actu()
-{
-  var i;
-  var myNodeList = document.getElementsByTagName("li");
-  console.log(myNodeList)
-  
-  for (i = 0; i < myNodeList.length; i++)
-  {
-    var span = document.createElement("span");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    myNodeList[i].appendChild(span);
-  }
-
-}*/
 
 reportWebVitals();
